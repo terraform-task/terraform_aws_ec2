@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "my-ec2-project-tfstate-26mar"   # Replace with your S3 bucket name
+    bucket         = "my-ec2-project-tfstate-27mar"   # Replace with your S3 bucket name
     key            = "eks/terraform.tfstate"       # Path inside the bucket
     region         = "ap-south-1"                   # AWS region
-    dynamodb_table = "my-ec2-project-tflock-26mar"              # Replace with your DynamoDB table
+    dynamodb_table = "my-ec2-project-tflock-27mar"              # Replace with your DynamoDB table
     encrypt        = true
   }
 }
